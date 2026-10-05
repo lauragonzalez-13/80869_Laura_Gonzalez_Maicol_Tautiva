@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 // project import
 import { AdminComponent } from './theme/layout/admin/admin.component';
 import { GuestComponent } from './theme/layout/guest/guest.component';
+import { PacientesComponent } from './demo/pages/pacientes/pacientes';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
       {
         path: 'dashboard',
         loadComponent: () => import('./demo/dashboard/dashboard.component').then((c) => c.DashboardComponent)
+      },
+       {
+        path: 'pacientes',
+        loadComponent: () => import('./demo/pages/pacientes/pacientes').then((c) => c.PacientesComponent)
       },
       {
         path: 'basic',

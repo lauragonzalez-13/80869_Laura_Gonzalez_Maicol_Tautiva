@@ -31,6 +31,23 @@ export const NavigationItems: NavigationItem[] = [
     ]
   },
   {
+     id: 'formula_medica',
+     title: 'Gestión de Fórmulas Médica',
+     type : 'group',
+     icon:'icon-activity',
+     children: [
+      {
+        id: 'formula',
+        title: 'Formula Médica',
+        type: 'item',
+        url: '/pacientes',
+        icon:'icon-activity',
+        classes: 'nav-item'
+      }
+    ]
+
+  },
+  {
     id: 'ui-element',
     title: 'UI ELEMENT',
     type: 'group',
